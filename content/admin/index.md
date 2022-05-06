@@ -1,8 +1,8 @@
 ---
-# Generate Wowchemy CMS
-type: wowchemycms
+# Generate minye
+type: minyeyang
 private: true
 outputs:
-  - wowchemycms_config
+  - minyeyang_config
   - HTML
 ---
