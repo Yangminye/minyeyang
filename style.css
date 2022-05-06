@@ -35,9 +35,9 @@ body * {
   }
   
   .image-section img {
-    max-width: 60%;
+    max-width: 50%;
     max-height: 60%;
-    margin-top: 50px !important;
+    margin-top: 60px !important;
     object-fit: cover;
   }
   
