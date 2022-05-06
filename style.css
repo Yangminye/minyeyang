@@ -30,8 +30,8 @@ body * {
     text-align: center;
     background-color: #262626;
     -moz-padding: 20px; /*works on Firefox */
-    -webkit-padding: 20px; /*works on Safari and Google Chrome*/
-    padding: 20px;
+    -webkit-padding: 5px; /*works on Safari and Google Chrome*/
+    padding: 5px;
   }
   
   .image-section img {
