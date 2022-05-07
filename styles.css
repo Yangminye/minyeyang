@@ -13,7 +13,7 @@ body * {
 
   .website-counter {
   display: flex;
-  justify-content: center;
+
   align-items: center;
   flex-direction: column;
 }
@@ -27,7 +27,7 @@ body * {
   font-weight: 300;
   font-family: 'Times New Roman', Times, serif;
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: 0;
   margin-left: 0;
 }
 
