@@ -14,16 +14,15 @@ body * {
   .website-counter {
   display: flex;
 
-  align-items: center;
-  flex-direction: column;
+
 }
 
 .website-counter {
   background-color: whilte;
-  height: 50px;
-  width: 80px;
+ 
+ 
   color: black;
-  border-radius: 30px;
+
   font-weight: 300;
   font-family: 'Times New Roman', Times, serif;
   font-size: 15px;
