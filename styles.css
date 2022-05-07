@@ -9,7 +9,26 @@ body * {
     margin: 0;
     scroll-behavior: smooth;
   }
-  
+  /*website counter*/
+
+  .website-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.website-counter {
+  background-color: #ff4957;
+  height: 50px;
+  width: 80px;
+  color: white;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
   h1,
   h2,
   h3,
@@ -31,7 +50,7 @@ body * {
     -webkit-text-align: center; /*works on Safari and Google Chrome*/
     text-align: center;
     background-color: #262626;
-    -moz-padding: 20px; /*works on Firefox */
+    -moz-padding: 50px; /*works on Firefox */
     -webkit-padding: 20px; /*works on Safari and Google Chrome*/
     padding: 20px;
   }
@@ -39,7 +58,7 @@ body * {
   .image-section img {
     max-width: 50%;
     max-height: 60%;
-    margin-top: 60px !important;
+    margin-top: 100px !important;
     object-fit: cover;
   }
   
