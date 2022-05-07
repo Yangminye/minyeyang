@@ -19,6 +19,8 @@ body * {
   
   ul li {
     border: none !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
   }
   
   /*Containers*/
@@ -30,13 +32,13 @@ body * {
     text-align: center;
     background-color: #262626;
     -moz-padding: 20px; /*works on Firefox */
-    -webkit-padding: 5px; /*works on Safari and Google Chrome*/
-    padding: 5px;
+    -webkit-padding: 20px; /*works on Safari and Google Chrome*/
+    padding: 20px;
   }
   
   .image-section img {
     max-width: 50%;
-    max-height: 1%;
+    max-height: 60%;
     margin-top: 60px !important;
     object-fit: cover;
   }
@@ -58,7 +60,7 @@ body * {
   }
   
   .content-container {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     text-align: justify;
   }
