@@ -1,237 +1,214 @@
+/*General*/
+body * {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  /*website counter*/
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minye Yang</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--Montserrat font-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-    <script defer src="index.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
+  .website-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  </head>
-  <body>   
-    <body style="background-color:FDCCC1;font-family:new roma">
-    <section>
-      <!-- MOBILE NAVIGATION -->
-      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
-        <a href="#home" class="w3-bar-item w3-button w3-hover-none">CURRICULUM VITAE</a>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
-      </div>
-      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
-        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
-        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
-      </div>
+.website-counter {
+  background-color: whilte;
+  height: 50px;
+  width: 80px;
+  color: black;
+  border-radius: 30px;
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 10px;
+}
 
-      <!-- SOCIAL SECTION -->
-      <section class="image-section w3-quarter w3-fixed w3-padding-small">
-        <!--IMAGE/AVATAR-->
-        <br><br><br><br><br><br><br><br><br><br>
-       
-        <img src="./image/avatar.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
-        <!--SCIAL NETWORK BUTTONS-->
-        <div class="links w3-margin-top w3-padding-small">
-          <!--<a class="icon-link w3-text-sand w3-hover-text-amber" href="#facebook" target="_blank">
-              <i data-feather="facebook"></i>
-          </a>-->
-          <!--a class="icon-link w3-text-sand w3-hover-text-amber" href="#instagram" target="_blank">
-             <i data-feather="instagram"></i>
-          </a>-->
-          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://scholar.google.com/citations?user=he8t-PsAAAAJ&hl=en" target="_blank">
-             <i data-feather="book">GoogleScholar</i>
-          </a>
-          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/minye-yang/" target="_blank">
-             <i data-feather="linkedin">Linkedin</i>
-          </a>
-        </div>
-        <!--CV DOWNLOAD BUTTON-->
-        <div class="w3-container w3-padding-16">
-          <a href="./CV-Yang Minye.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
-            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
-            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
-          </a>
-        </div>
-      </section>
-
-      <!--CV CONTENT SECTION-->
-      <section class="w3-threequarter w3-padding-large w3-right">
-        <!--DESKTOP NAVIGATION-->
-        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
-          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">CURRICULUM VITAE</a>
-          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
-          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
-          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
-        </div>
-        <div class="content-container w3-margin-top-2">
-          <!--HOME SECTION-->
-          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
-            <p style="font-style: italic; font-size:x-large; font-family:new roma; ">"Why was Magnus not banned?"</p>
-            <h1>Minye Yang</h2>
-            
-            <p></p>
-          </div>
-
-          <!--ABOUT SECTION-->
-          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 2px !important;">ABOUT</h2>
-                      <p style="font-family: new roma;font-size: 130%"> 
-              
-              
-              
-              Minye Yang completed the bachelor’s degree from Huazhong University of Science and Technology in Optical and Electronic Information, Hubei, China, in 2014, and received the M.Sc. degree in Electrical and Computer Engineering from Wayne State University, Detroit, MI, in 2019. He is currently pursuing the Ph.D. degree in Electrical and Computer Engineering at the University of Illinois at Chicago, Chicago, IL, USA. 
-His research focuses on applied electromagnetics, RF, microwave antennas and circuits, biomedical sensing, metasurfaces, wireless sensors and integrated systems.
-
-            </p>
-          </div>
-
-          <!--RESUME-->
-          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
-            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
-            <div class="w3-container w3-margin-top-2 w3-cursive">
-
-              <!--Education Experience-->
-              <h3 class="w3-border-amber">Education Experience</h3>
-              <div class="">
-                <h4>Ph.D. Candidate</h4>
-                <p style="font-size: 120%;font-family: new roma;"> September 2019 - Present</p>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li>Department of Electrical and Computer Engineering, University of Illinois at Chicago</li>
-
-                </ul>
-              </div>
-              <div class="">
-                <h4>Master of Science</h4>
-                <p style="font-size: 120%;font-family: new roma;">September 2017 - June 2019 </p>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li>Department of Electrical and Computer Engineering, Wayne State University</li>
-                  
-                </ul>
-              </div>
-              <div class="">
-                <h4>Bachelor of Science</h4>
-                <p style="font-size: 120%;font-family: new roma;">September 2014 - July 2017 </p>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li>Microelectronics of Scicence and Technology, Huazhong University of Scien and Technology</li>
-                 
-                </ul>
-              </div>
-            </div>
-
-            <!---Reserach Areas-->
-            <div class="w3-container w3-margin-top-2 w3-cursive">
-              <h3 class="w3-border-amber">Reserach Areas</h3>
-                <h4>Applied Electromagnetics, Microwave Circuits, non-Hermitian Systems, Radio-Frequency sensor
-
-                GFET Biosensor, Physically Unclonable Functions, Biomedical Monitoring System, Internet-of-Things, Wireless Sensors Networks</h4>
-                
-            </div>
-
-            <!--Reserach Experiences-->
-            <div class="w3-container w3-margin-top-2 w3-cursive">
-              <h3 class="w3-border-amber">Reserach Experiences</h3>
-              <!--SOFT SKILLS-->
-              <h4>Ultrasensitive Optical and RF Sensors in Pairy Time-Symmetry</h4>
-              <ul class="w3-ul" style="font-weight: 500;">
-                <li>The project aims to develop theoretical model for analysis of spectral singularities in PT-symmetry such as the 
-                  coherent perfect absorber-laser (CPAL) point, exceptional point (EP), and divergent EP. We practically design and
-                  fabricate the corresponding devices and observe the CPAL, EP, and DEP phenomena. In addition, we apply such spectral
-                  singularities to the wireless biomedical sensing applications, such as intracranial pressure monitoring.
-                </li>
-                
-              </ul>
-              <!--TECHNICAL SKILLS-->
-              <h4>Physically Unclonable Functions in Optics and RF for Cyber Securities</h4>
-              <ul class="w3-ul" style="font-weight: 500;">
-                <li>The Physically Unclonable Functions (PUFs), serving as true random number generators, are of great imporance in 
-                  the IoT era. The PUF based on the spectral singular points of PT-symmetry takes use of the extreme sensitive of the
-                  system toward unwanted perturbations induced during the fabrication process. In other word, tiny distrubances occurred to
-                  the lumped elements in PT-system will cause drastically, and randomly shifted operating statuses, forming a high quality PUF.
-                  In addition, we also employ the graphene devices to construt PUFs, as the graphene layers are highly sensitive to external environments,
-                  such as surface absorbates, unwanted doping during the fabrication. Those disturbances may result in unique electrical properties of 
-                  graphene devices and thereby leading to perfect PUFs.
-                </li>
-                
-              </ul>
-              
-            </div>
-
-
-
-
-            <!--Publications-->
-            <div class="w3-container w3-margin-top-2 w3-cursive">
-              <h3 class="w3-border-amber">Publications</h3>
-              <h4>Journal Papers</h4>
-              <ul class="w3-ul" style="font-weight: 500;">
-                <li>----------</li>
-                <li>----------</li>
-              </ul>
-              <h4>Conference Papers</h4>
-              <ul class="w3-ul" style="font-weight: 500;">
-                <li>----------</li>
-                <li>----------</li>
-              </ul>
-              <h3 class="w3-border-amber">Invited Talks</h3>
-              <ul class="w3-ul" style="font-weight: 500;">
-                <li>----------</li>
-                <li>----------</li>
-              </ul><h3 class="w3-border-amber">Awards</h3>
-              <ul class="w3-ul" style="font-weight: 500;">
-                <li>----------</li>
-                <li>----------</li>
-              </ul>
-            </div>            
-          </div>
-
-          <!--CONTACT SECTION-->
-          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
-            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CONTACT</h3>
-            <div class="w3-margin-top-2" style="font-weight: 500;font-family:new roma">
-              <p style="font-size: 120%;font-family: new roma;">Name: Minye Yang</p>
-              <p style="font-size: 120%;font-family: new roma;">Adress: 575 W Madison St, 60661 Chicago, Illinois</p>
-              <p style="font-size: 120%;font-family: new roma;">Phone number: +012487973096</p>
-              <p style="font-size: 120%;font-family: new roma;">E-mail: myang66@uic.edu</p>
-            </div>
-          </div>
-
-          <!--Website counter section-->
-
-             
-    
-
-        <!--FOOTER-->
-        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
-          <p style="font-size: 120%;font-family: new roma;">© 2022 - Minye Yang</p>
-      
-         
-    
-        <!-- End footer -->
-        </footer>
-
-        <!--END OF CV SECTION-->
-      </section>      
-    </section>
-    <script>
-      // Function to toggle mobile navigation
-      function toggleNavigation() {
-        let nav = document.getElementById("mobile-nav");
-        if (nav.classList.contains('w3-show')) {
-          nav.classList.remove('w3-show');
-        } else { 
-          nav.classList.add('w3-show');
-        }
-      }
-    </script>
-    <script>
-      // Script to load feather icons
-      feather.replace()
-    </script>
-  </body>
-</html>
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: bold;
+  }
+  
+  ul li {
+    border: none !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+  }
+  
+  /*Containers*/
+  
+  .image-section {
+    height: 100vh;
+    -moz-text-align: center; /*works on Firefox */
+    -webkit-text-align: center; /*works on Safari and Google Chrome*/
+    text-align: center;
+    background-color: #262626;
+    -moz-padding: 50px; /*works on Firefox */
+    -webkit-padding: 20px; /*works on Safari and Google Chrome*/
+    padding: 20px;
+  }
+  
+  .image-section img {
+    max-width: 50%;
+    max-height: 60%;
+    margin-top: 100px !important;
+    object-fit: cover;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .links a {
+    flex: 0 0 10%;
+  }
+  
+  .icon-link {
+    text-decoration: none;
+    font-size: 48px auto;
+    padding: 26px;
+  }
+  
+  .content-container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  
+  .home {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .home p {
+    font-weight: bold;
+  }
+  
+  .home h1 {
+    font-size: 64px;
+  }
+  
+  .html {
+    width: 90%;
+    background-color: #04aa6d;
+  }
+  
+  .w3-ul li {
+    padding: 8px 8px;
+  }
+  
+  /*Utilities*/
+  
+  .w3-margin-top-2 {
+    margin-top: 32px;
+  }
+  
+  .w3-margin-top-4 {
+    margin-top: 64px;
+  }
+  
+  .w3-margin-top-20-percent {
+    margin-top: 20%;
+  }
+  
+  .w3-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  
+  .w3-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  
+  /*Media queries*/
+  @media screen and (max-width: 1200px) {
+    .home {
+      width: 90%;
+    }
+    .content-container {
+      width: 80% !important;
+    }
+  
+    .download-text {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .home {
+      width: 100%;
+    }
+    .home h1 {
+      font-size: 48px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .content-container {
+      width: 100% !important;
+    }
+  
+    .image-section {
+      -moz-padding: 10px; /*works on Firefox */
+      -webkit-padding: 10px; /*works on Safari and Google Chrome*/
+      padding: 10px;
+    }
+  
+    .links a {
+      flex: 0 0 5% !important;
+    }
+  
+    .home {
+      text-align: justify;
+      width: 100%;
+    }
+  
+    .home p {
+      font-size: medium !important;
+    }
+  
+    .home h1 {
+      font-size: 32px;
+    }
+    .home h2 {
+      font-size: 24px;
+    }
+  
+    .w3-fixed {
+      position: inherit;
+    }
+  
+    .image-section {
+      height: auto;
+    }
+  
+    .image-section img {
+      max-width: 80%;
+      max-height: 80%;
+    }
+  
+    .icon-link {
+      font-size: 24px;
+    }
+  
+    .w3-container,
+    .w3-panel {
+      padding: 0.01em;
+    }
+  
+    .download-text {
+      display: inline-block;
+    }
+  }
