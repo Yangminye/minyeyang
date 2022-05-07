@@ -19,13 +19,13 @@ body * {
 }
 
 .website-counter {
-  background-color: #ff4957;
+  background-color: whilte;
   height: 50px;
   width: 80px;
   color: white;
   border-radius: 30px;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 10px;
   margin-top: 10px;
 }
 
